@@ -1,0 +1,42 @@
+/* icon material simbol */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 18;
+  vertical-align: middle;
+}
+
+/* background bergambar dengan overlay gradient */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Html.png") no-repeat  center center/cover;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* animasi slide up */
+.fade-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation:fadeSlideup 1s forwards;
+}
+
+.fade-slide-up.delay-1 {animation-delay: 0.3s;}
+.fade-slide-up.delay-2 {animation-delay: 0.6s;}
+
+@keyframes fadeSlideup {
+    to {
+        opacity: 1;
+        transform: transLateY(0);
+    }
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
